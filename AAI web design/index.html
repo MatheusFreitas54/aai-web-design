@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/619/619175.png" type="image/x-icon">
+    <title>Fecaf Music</title>
+</head>
+<body>
+    <header>
+        <div class="headerItem">
+            <span style="color: #ff0000; margin-right: 3px;">FECAF</span>MUSIC
+        </div>
+        <nav class="headerItem">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PAGES</a></li>
+                <li><a href="">NEWS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav class="headerItem">
+            <ul>
+                <li><a href="">HELP</a></li><span style="color:#ff0000;">|</span>
+                <li><a href="">LOGIN</a></li>
+                <li><a href="" class="invertido">CREATE AN ACCOUNT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="containeMain">
+            <h1><span style="color: #ff0000; margin-right: 28px;">Music</span>for<br>everyone.</h1>
+            <p id="text">Listening to music is a rich and engaging experience that goes beyond language and culture barriers. The captivating melody, inspiring lyrics, and pulsating rhythms have the unique power to transport us and evoke deep emotions.</p>
+            <div id="botoesLink">
+                <button id="download" class="hoverBotoes">Download Now</button>
+                <button id="free" class="hoverBotoes">Star Free Trial</button>
+            </div>
+        </div>
+        <div id="img">
+            <img src="https://lifestyle.uai.com.br/wp-content/uploads/sites/9/2021/04/avinil.jpg" alt="Capa Disco de Vinil" id="capaImage">
+        </div>
+    </main>
+    <footer>
+        <p id="credito"></p>
+    </footer>
+    
+    <script>
+        let ano = new Date().getFullYear();
+        let paragrafo = document.querySelector('#credito');
+        paragrafo.innerHTML = `${ano} | Unifecaf -  Desenvolvido por Matheus Freitas 🚀🚀`;
+    </script>
+</body>
+</html>
